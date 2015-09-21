@@ -28,7 +28,7 @@ config = {
                 host     : '127.0.0.1',
                 user     : process.env.SHENHULIAN_DATABASE_USER,
                 password : process.env.SHENHULIAN_DATABASE_PASSWORD,
-                database : 'shenhulian',
+                database : 'sblog',
                 charset  : 'utf8'
             },
             debug: false

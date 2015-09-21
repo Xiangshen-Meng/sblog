@@ -1,0 +1,33 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+{{! If we have a tag cover, display that }}
+{{#author}}
+    <header class="tag-banner">
+        <div class="container">
+            <div class="col-lg-offset-1 col-lg-10">
+                {{#if image}}
+                    <div class="feature-image">
+                        <img src="{{image}}">
+                    </div>
+                {{/if}}
+                <div class="feature-info">
+                    <h1>{{name}}</h1>
+                    <h2>{{boi}}</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+{{/author}}
+
+{{! The main content area on the homepage }}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-offset-1 col-lg-10">
+
+            {{! The tag below includes the post loop - partials/loop.hbs }}
+            {{> "loop"}}
+
+        </div>
+    </div>
+</div>

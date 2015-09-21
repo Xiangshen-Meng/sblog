@@ -1,0 +1,27 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+{{! The big featured header on the homepage, with the site logo and description }}
+<header class="top-banner">
+    <div class="container">
+
+        <div class="col-lg-offset-1 col-lg-10" style="background-image: url({{@blog.cover}})">
+            <div class="page-header">
+                <h1 class="blog-title">知识堂</h1>
+                <h2 class="blog-description text-muted">{{@blog.description}}</h2>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-offset-1 col-lg-10">
+            <div class="recent-posts-title">
+                最新文章
+            </div>
+
+            {{> "loop"}}
+        </div>
+    </div>
+</div>

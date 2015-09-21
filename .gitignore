@@ -1,0 +1,4 @@
+.DS_Store
+config.codekit
+ghost-dev.db
+node_modules

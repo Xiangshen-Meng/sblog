@@ -1,0 +1,27 @@
+{{! The main content area on the homepage }}
+<main class="post-list with-img" role="main">
+    {{! Each post will be output using this markup }}
+    {{#foreach posts}}
+
+        <article class="{{post_class}}">
+            <a href="{{url}}" target="_blank">
+                <img class="img" src="{{image}}"/>
+            </a>
+            <div class="content">
+                <a class="title" href="{{url}}" target="_blank">{{{title}}}</a>
+                <div>
+                    <span class="meta author"><img src="{{author.image}}">{{{author}}}</span>
+                    <span class="meta time hidden-xxs">{{date format='YYYY年MM月DD日'}}</span>
+                </div>
+                <div class="summary hidden-xxs">
+                    <p>{{excerpt words="70"}}...</p>
+                </div>
+            </div>
+        </article>
+
+    {{/foreach}}
+
+    {{!! After all the posts, we have the previous/next pagination links }}
+    {{pagination}}
+
+</main>
