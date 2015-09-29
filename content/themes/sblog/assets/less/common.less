@@ -55,7 +55,7 @@ body {
 
 .recent-posts-title {
   font-size: 16px;
-  color: @rixi-blue;
+  color: @sblog-green;
   padding-left: 7px;
   padding-bottom: 7px;
   border-bottom: 4px solid #dcdcdc;
@@ -66,26 +66,24 @@ body {
   margin: 0;
 
   .post {
-    color: #000;
+    .clearfix;
+    color: #333;
     font-size: 14px;
     line-height: 21px;
-    padding-left: 0;
+    padding: 25px 0;
+    border-bottom: 1px solid @border-gray;
 
     &:hover {
-      color: @rixi-blue;
+      color: @sblog-green-darken;
     }
 
     img {
       max-width: 200px;
     }
-  }
 
-  &.with-img {
-    .post {
-      .clearfix;
-      color: #333;
-      padding: 25px 0;
-      border-bottom: 1px solid @border-gray;
+    &.with-img {
+      padding-left: 3px;
+
       .img {
         margin-top: 4px;
         float: left;
@@ -107,75 +105,77 @@ body {
           margin-left: 100px;
         }
       }
-      .title {
-        display: block;
-        color: #000;
-        font-size: 20px;
-        line-height: 27px;
-        &:hover {
-          color: @rixi-blue;
-        }
-        @media (max-width: (@screen-sm-max)) {
-          font-size: 15px;
-        }
-        @media (max-width: (@screen-xxs-max)) {
-          font-size: 13px;
-          line-height: 18px;
-          min-height: 36px;
-        }
+    }
+    .content {
+    }
+    .title {
+      display: block;
+      color: #000;
+      font-size: 20px;
+      line-height: 27px;
+      &:hover {
+        color: @sblog-green-darken;
       }
-      .meta {
-        display: inline-block;
-        margin-top: 10px;
-        margin-left: 16px;
-        font-size: 12px;
-        height: 16px;
-        line-height: 16px;
-        &:first-child {
-          margin-left: 0;
-        }
-        @media (max-width: @screen-xs-max) {
-          margin-top: 5px ;
-        }
-
+      @media (max-width: (@screen-sm-max)) {
+        font-size: 15px;
       }
-      .author {
-        color: #999;
+      @media (max-width: (@screen-xxs-max)) {
+        font-size: 13px;
+        line-height: 18px;
+        min-height: 36px;
+      }
+    }
+    .meta {
+      display: inline-block;
+      margin-top: 10px;
+      margin-left: 16px;
+      font-size: 12px;
+      height: 16px;
+      line-height: 16px;
+      &:first-child {
         margin-left: 0;
-        & > a{
-          color:@rixi-blue;
-          &:hover{
-            color:#0096ff;
-          }
-        }
+      }
+      @media (max-width: @screen-xs-max) {
+        margin-top: 5px ;
+      }
 
-        img {
-          width: 30px;
-          border-radius: 50%;
-          margin-right: 7px;
+    }
+    .author {
+      color: #999;
+      margin-left: 0;
+      & > a{
+        color:@sblog-green;
+        &:hover{
+          color: @sblog-green-darken;
         }
       }
-      .time {
-        color: #999;
-      }
-      .endorse {
-        color: #949ca8;
-        .fa {
-          font-size: 15px;
-        }
-      }
-      .summary {
-        color: @gray-blue;
-        margin-top: 10px;
-        font-size: 14px;
-        line-height: 1.6em;
 
-        @media (max-width: (@screen-md-max)) {
-          font-size: 13px;
-        }
-        @media (max-width: (@screen-sm-max)) {
-          font-size: 12px;
-        }
+      img {
+        width: 30px;
+        border-radius: 50%;
+        margin-right: 7px;
+      }
+    }
+    .time {
+      color: #999;
+    }
+    .endorse {
+      color: #949ca8;
+      .fa {
+        font-size: 15px;
+      }
+    }
+    .summary {
+      color: @gray-blue;
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 1.6em;
+
+      @media (max-width: (@screen-md-max)) {
+        font-size: 13px;
+      }
+      @media (max-width: (@screen-sm-max)) {
+        font-size: 12px;
       }
     }
   }
@@ -183,40 +183,10 @@ body {
 
 /* FOOTER */
 .site-footer {
-  background-color: #DAE2EE;
-  padding: 4em;
-
-  hr {
-    border-color: #BABABA;
-  }
-
-  .site-link {
-    margin-top: 40px;
-    font-size: 20px;
-    text-align: center;
-    padding-bottom: 15px;
-
-    span {
-      font-size: 14px;
-    }
-  }
-
-  .announce {
-    text-align: center;
-    font-size: 16px;
-    margin-bottom: 40px;
-
-    span {
-      font-weight: bold;
-    }
-    a {
-      color: inherit;
-    }
-  }
 }
 
 .text-blue {
-  color: @rixi-blue;
+  color: @sblog-green;
 }
 
 /* PAGINATION */

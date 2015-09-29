@@ -1,12 +1,14 @@
 {{! The main content area on the homepage }}
-<main class="post-list with-img" role="main">
+<main class="post-list" role="main">
     {{! Each post will be output using this markup }}
     {{#foreach posts}}
 
-        <article class="{{post_class}}">
-            <a href="{{url}}" target="_blank">
-                <img class="img" src="{{image}}"/>
-            </a>
+        <article class="{{post_class}} {{#if image}}with-img{{/if}}">
+            {{#if image}}
+                <a href="{{url}}" target="_blank">
+                    <img class="img" src="{{image}}"/>
+                </a>
+            {{/if}}
             <div class="content">
                 <a class="title" href="{{url}}" target="_blank">{{{title}}}</a>
                 <div>

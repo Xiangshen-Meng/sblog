@@ -3,3 +3,4 @@ config.codekit
 ghost-dev.db
 node_modules
 .idea
+content/images
