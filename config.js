@@ -11,14 +11,14 @@ config = {
     // When running Ghost in the wild, use the production environment.
     // Configure your URL and mail settings here
     production: {
-        url: 'http://www.shenhulian.com/blog',
+        url: 'http://www.chinalab.jp/lab',
         mail: {
             transport: 'SMTP',
                 options: {
                     service: 'Mailgun',
                     auth: {
-                        user: 'postmaster@shenhulian.com',
-                        pass: process.env.SHENHULIAN_MAIL_PASSWORD
+                        user: 'postmaster@chinalab.jp',
+                        pass: process.env.CHINALAB_MAIL_PASSWORD
                 }
             }
         },
@@ -26,8 +26,8 @@ config = {
             client: 'mysql',
             connection: {
                 host     : '127.0.0.1',
-                user     : process.env.SHENHULIAN_DATABASE_USER,
-                password : process.env.SHENHULIAN_DATABASE_PASSWORD,
+                user     : process.env.CHINALAB_DATABASE_USER,
+                password : process.env.CHINALAB_DATABASE_PASSWORD,
                 database : 'sblog',
                 charset  : 'utf8'
             },
@@ -36,7 +36,7 @@ config = {
 
         server: {
             host: '127.0.0.1',
-            port: '2371'
+            port: '2372'
         }
     },
 
