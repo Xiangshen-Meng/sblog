@@ -13,9 +13,13 @@ body {
 
 .top-banner {
   &:extend(.base-banner);
+  padding-top: 0;
 
   .page-header {
+    background-color: rgba(0, 0, 0, 0.5);
     border: none;
+    height: 256px;
+    line-height: 256px;
   }
 }
 
@@ -55,7 +59,7 @@ body {
 
 .recent-posts-title {
   font-size: 16px;
-  color: @sblog-green;
+  color: @sblog-primary;
   padding-left: 7px;
   padding-bottom: 7px;
   border-bottom: 4px solid #dcdcdc;
@@ -74,7 +78,7 @@ body {
     border-bottom: 1px solid @border-gray;
 
     &:hover {
-      color: @sblog-green-darken;
+      color: @sblog-primary-darken;
     }
 
     img {
@@ -114,7 +118,7 @@ body {
       font-size: 20px;
       line-height: 27px;
       &:hover {
-        color: @sblog-green-darken;
+        color: @sblog-primary-darken;
       }
       @media (max-width: (@screen-sm-max)) {
         font-size: 15px;
@@ -144,9 +148,9 @@ body {
       color: #999;
       margin-left: 0;
       & > a{
-        color:@sblog-green;
+        color:@sblog-primary;
         &:hover{
-          color: @sblog-green-darken;
+          color: @sblog-primary-darken;
         }
       }
 
@@ -186,7 +190,7 @@ body {
 }
 
 .text-blue {
-  color: @sblog-green;
+  color: @sblog-primary;
 }
 
 /* PAGINATION */
