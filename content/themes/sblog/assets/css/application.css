@@ -1297,8 +1297,7 @@ small,
 }
 mark,
 .mark {
-  background-color: #3498db;
-  color: #ffffff;
+  background-color: #fcf8e3;
   padding: .2em;
 }
 .text-left {
@@ -6853,6 +6852,10 @@ body {
 }
 .post-article .post-content blockquote p {
   margin-bottom: 10px;
+}
+.post-article .post-content mark {
+  background-color: #3498db;
+  color: #FFFFFF;
 }
 .sidebar {
   margin-top: 30px;
