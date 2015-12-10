@@ -1297,7 +1297,8 @@ small,
 }
 mark,
 .mark {
-  background-color: #fcf8e3;
+  background-color: #3498db;
+  color: #ffffff;
   padding: .2em;
 }
 .text-left {
